@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="css/style_student_homepage.css" />
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script href="js/student_homepage.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
@@ -18,78 +17,106 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script href="js/student_homepage.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
-                    <div class="col-sm-8"><h2>Absence <b>étudiant</b></h2></div>
-                    <div class="col-sm-4">
-                        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>Envoyer justificatif(s)</button>
+                    <div class="col-sm-8">
+                        <h1>Absence <b>étudiant</b></h1>
                     </div>
                 </div>
+            </div>
+            <div>
+                <form method="POST" action="#" enctype="multipart/form-data">
+                    <!-- COMPONENT START -->
+                    <div class="form-group">
+                        <div class="input-group input-file" name="Fichier1">
+                            <input type="text" class="form-control" placeholder='Choose a file...' />			
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-choose" type="button">Choose</button>
+                            </span>
+                
+                
+                        </div>
+                    </div>
+                    <!-- COMPONENT END -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary pull-right" disabled>Submit</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                    </div>
+                </form>
             </div>
             <table class="table table-bordered">
                 <thead>
                     <tr>
+                        <th>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkAll">
+                                <label class="custom-control-label" for="checkAll"></label>
+                            </div>
+                        </th>
                         <th>Du</th>
                         <th>Au</th>
                         <th>De</th>
                         <th>À</th>
                         <th>Cours</th>
-                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>28/06/20</td>
-                        <td>28/06/20</td>
-                        <td>10h30</td>
-                        <td>12h40</td>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+                                <label class="custom-control-label" for="defaultUnchecked1"></label>
+                            </div>
+                        </td>
+                        <td>28/06</td>
+                        <td>28/06</td>
+                        <td>10:30</td>
+                        <td>12:40</td>
                         <td>marketing</td>
-                        <td>
-							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
-                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
-                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td>
-							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
-                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+                                <label class="custom-control-label" for="defaultUnchecked2"></label>
+                            </div>
                         </td>
+                        <td>28/06</td>
+                        <td>28/06</td>
+                        <td>10:30</td>
+                        <td>12:40</td>
+                        <td>marketing</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td>
-							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
-                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
+                                <label class="custom-control-label" for="defaultUnchecked3"></label>
+                            </div>
                         </td>
+                        <td>28/06</td>
+                        <td>28/06</td>
+                        <td>10:30</td>
+                        <td>12:40</td>
+                        <td>marketing</td>
                     </tr> 
                   <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
-                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
-                        </td>
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
+                            <label class="custom-control-label" for="defaultUnchecked4"></label>
+                        </div>
+                    </td>
+                    <td>28/06</td>
+                    <td>28/06</td>
+                    <td>10:30</td>
+                    <td>12:40</td>
+                    <td>marketing</td>
                     </tr>
                 </tbody>
             </table>
